@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import AvailableMeals from "./AvailableMeals";
+import AvailableMeals from "../Meals/AvailableMeals";
 import MealsSummary from "../Meals/MealsSummary";
 
 const Meals = (props) => {
