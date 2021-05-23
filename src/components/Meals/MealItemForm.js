@@ -3,7 +3,6 @@ import Input from "../UI/Input";
 import classes from "../Meals/MealItemForm.module.css";
 
 const MealItemForm = (props) => {
-  console.log(props);
   const amountInputRef = useRef();
   const [IsAmountValid, setAmountValid] = useState(true);
 
@@ -29,7 +28,7 @@ const MealItemForm = (props) => {
         ref={amountInputRef}
         label="Amount"
         input={{
-          id: "amount" + props.id,
+          id: "amount_" + props.id,
           type: "number",
           min: "1",
           max: "5",
