@@ -23,11 +23,9 @@ const HeaderCartButton = (props) => {
       setStateChanged(false);
     }, 300);
 
-    return()=>{
+    return () => {
       clearTimeout(timer);
-    }
-      
-    
+    };
   }, [items]);
 
   const btnClasses = `${classes.button} ${IsStateChanged ? classes.bump : ""}`;

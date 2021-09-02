@@ -75,7 +75,7 @@ const CartProvider = (props) => {
   };
 
   const removeItemHandler = (id) => {
-    console.log('removing');
+    console.log("removing");
     dispatchCartAction({ type: "REMOVE_ITEM", value: id });
   };
 
